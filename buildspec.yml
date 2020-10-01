@@ -17,14 +17,14 @@ phases:
   #Install dependencies
   - echo "Installing dependencies"
   - yarn 
-build:
- commands:
- #tests
- - echo "Testing....."
- - echo "No Tests are added now!"
- #build
- - echo "Building...."
- - yarn build
+ build:
+  commands:
+  #tests
+  - echo "Testing....."
+  - echo "No Tests are added now!"
+  #build
+  - echo "Building...."
+  - yarn build
 
 artifacts:
  files:
