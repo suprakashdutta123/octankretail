@@ -28,6 +28,8 @@ phases:
 
 artifacts:
  files:
+  - echo "Extracting files..."
   - '**/*'
+  - echo "Completed publishing files..."
  discard-paths: no
  base-directory: build
