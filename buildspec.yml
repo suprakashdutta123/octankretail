@@ -26,8 +26,11 @@ build:
  - echo Building....
  - yarn build
 
- artifacts: 
+ artifacts:
+  - echo Before file section
   files:
+  - echo before file upload
   - build/*
+  - echo after file upload
   #discard-paths: no
   #base-directory: build
