@@ -8,7 +8,9 @@ function App() {
       <header className="App-header">
         
         <p>
-          Hello World !!
+                  Hello World !!
+
+                  log - SNS tested for frontend
         </p>
         
       </header>
