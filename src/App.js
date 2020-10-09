@@ -11,7 +11,7 @@ function App() {
                   Hello World !!
 
                   log - SNS tested for frontend
-                  checking CF invalidation 
+                  checking CF invalidation  
         </p>
         
       </header>
