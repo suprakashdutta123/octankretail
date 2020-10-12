@@ -1,22 +1,40 @@
-import React from 'react';
+import React, { Component } from "react";
 
-import './App.css';
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: null,
+      isLoaded: false,
+    };
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        
-        <p>
-                  Hello World !!
+  componentDidMount() {
+    fetch("https://d3rno3xn80u5m0.cloudfront.net/dev/customer")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+    // .then((json) => {
+    //    this.state({
+    //     isLoaded: true,
+    //      items: json,
+    //   });
+    //  });
+  }
 
-                  log - SNS tested for frontend
-                  checking CF invalidation   s
-        </p>
-        
-      </header>
-    </div>
-  );
+  render() {
+    return <div>Is Loading !!!!!!!!!....</div>;
+  }
+  /*
+    var { isLoaded, items } = this.state;
+
+    if (!isLoaded) {
+      return <div>Is Loading !!!!!!!!!....</div>;
+    } else {
+      return <div classname="App">Data has been loaded</div>;
+    }
+  }
+
+  */
 }
 
 export default App;
