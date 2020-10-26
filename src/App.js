@@ -110,35 +110,6 @@ class App extends Component {
         <div className="App">
           <div>{<h1>Octank Retail</h1>}</div>
 
-          <div>{<h2>Customers ------></h2>}</div>
-          <div>
-            {
-              <table>
-                <thead>
-                  <tr>
-                    <th>Customer ID</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Address</th>
-                    <th>State</th>
-                    <th>Zip</th>
-                    <th>Country</th>
-                  </tr>
-                </thead>
-                {customersArray.map((customer) => (
-                  <tr key={customer.customerID}>
-                    <td>{customer.customerID}</td>
-                    <td>{customer.customerFirstName}</td>
-                    <td>{customer.customerLastName}</td>
-                    <td>{customer.address}</td>
-                    <td>{customer.state}</td>
-                    <td>{customer.zip}</td>
-                    <td>{customer.country}</td>
-                  </tr>
-                ))}
-              </table>
-            }
-          </div>
           <div>{<h2>Products ------> </h2>} </div>
           <div>
             {
