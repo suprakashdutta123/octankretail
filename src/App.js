@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// adding some comment 
+
 class App extends Component {
   constructor(props) {
     super(props);
